@@ -17,6 +17,16 @@ export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
       <Datepicker
+        disabledDates={[
+          {
+            startDate: '2023-09-05',
+            endDate: '2023-09-08'
+          },
+          {
+            startDate: '2023-09-15',
+            endDate: '2023-09-20'
+          }
+        ]}
         primaryColor={'sky'}
         i18n={'es'}
         startWeekOn='mon'
